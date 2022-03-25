@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-info" >
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link text-primary" routerLink="/products">Product</a></li>
+                  <li class="nav-item"><a class="nav-link text-primary" routerLink="/student">Student</a></li>
+                </ul>
+              </nav>
+        </header>
+        <div class="row">
+            <aside class="col-lg-3">
+                đây là aside
+            </aside>
+            <main class="col-lg-9">
+                <router-outlet></router-outlet>
+            </main>
+        </div>
+        <footer style="text-align:center;" class="bg-info">Nguyen Ngoc Ky</footer>
+    </div>
+</body>
+</html>
+

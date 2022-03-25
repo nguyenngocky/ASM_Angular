@@ -1,51 +1,56 @@
-<div class="container">
-    <p>{{productForm.value | json}}</p>
-    <div class="row">
-        <div class="col-md-6">
-            <form #productForm="ngForm" class="form" (submit)="OnSubmit(productForm.value)">
-                <div class="mb-3">
-                    <label class="form-label" for="">Name</label>
-                    <input type="text" class="form-control" name="name" placeholder="name" [(ngModel)]="newProduct.name">
-                </div>
-                
-                <div class="mb-3">
-                    <label class="form-label" for="">Price</label>
-                    <input type="number" class="form-control" name="price" placeholder="price" [(ngModel)]="newProduct.price">
-                </div>
 
-                <div class="mb-3">
-                    <label class="form-label" for="">Desc</label>
-                    <input type="text" class="form-control" name="desc" placeholder="desc" [(ngModel)]="newProduct.desc">
-                </div>
-
-                <div class="mb-3">
-                    <button class="btn btn-success" type="submit">Submit</button>
-                </div>
-            </form>
-        </div>
-
-        <div class="col-md-6">
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Desc</th>
-                        <th>action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let pro of ListProduct">
-                        <td>{{pro.name}}</td>
-                        <td>{{pro.price}}</td>
-                        <td>{{pro.desc}}</td>
-                        <td>
-                            <button (click)="remove(pro.id)" class="btn btn-danger"> Xóa</button>
-                            <button (click)="onEdit(pro)" class="btn btn-success">Sửa</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+    <!-- <p>{{productForm.value | json}}</p> -->
+    <div style="width: 1500px;">
+        <div class="row">
+            <!-- <div class="col-md-6">
+                <form #productForm="ngForm" class="form" (submit)="OnSubmit(productForm.value)">
+                    <div class="mb-3">
+                        <label class="form-label" for="">Name</label>
+                        <input type="text" class="form-control" name="name" placeholder="name" [(ngModel)]="newProduct.name">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label" for="">Price</label>
+                        <input type="number" class="form-control" name="price" placeholder="price" [(ngModel)]="newProduct.price">
+                    </div>
+    
+                    <div class="mb-3">
+                        <label class="form-label" for="">Desc</label>
+                        <input type="text" class="form-control" name="desc" placeholder="desc" [(ngModel)]="newProduct.desc">
+                    </div>
+    
+                    <div class="mb-3">
+                        <button class="btn btn-success" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div> -->
+            
+            <div class="col-md-6">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Desc</th>
+                            <th><a class="btn btn-primary" [routerLink]="['/products/create']">Tạo mới</a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let pro of products">
+                            <td>{{pro.name}}</td>
+                            <td>{{pro.price}}</td>
+                            <td>{{pro.desc}}</td>
+                            <td>
+                                <a class="btn btn-primary" [routerLink]="['/products/', pro.id]">Chi tiet</a>
+                                <button (click)="onDelete(pro.id)" class="btn btn-danger"> Xóa</button>
+                                <a [routerLink]="['/products/', pro.id, 'edit']">
+                                    <button class="btn btn-success">Sửa</button>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-</div>
+

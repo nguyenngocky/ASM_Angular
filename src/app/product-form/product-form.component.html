@@ -1,0 +1,50 @@
+<p>product-form works!</p>
+
+<div class="container">
+
+
+    <h1 *ngIf="id == undefined">Create Product</h1> 
+    <h1 *ngIf="id != undefined">Update Product {{productDetail.name}}</h1>
+    
+    <p>{{name.invalid| json}}</p>
+    <form #productForm="ngForm" (submit)="OnUpdate(productForm.value)">
+        <input *ngIf="id" type="hidden" name="id" [(ngModel)]="productDetail.id">
+        <div class="mb-3">
+            <label class="form-label" for="">Name</label>
+            <input type="text" class="form-control" name="name" placeholder="name" [(ngModel)]="productDetail.name" required #name="ngModel">
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label" for="">Price</label>
+            <input type="number" class="form-control" name="price" placeholder="price" [(ngModel)]="productDetail.price" required min="1" #price="ngModel">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="">Desc</label>
+            <input type="text" class="form-control" name="desc" placeholder="desc" [(ngModel)]="productDetail.desc" required minlength="6" #desc="ngModel">
+        </div>
+
+        <div *ngIf="productForm.form.dirty" style="color: red">
+            <div *ngIf="name.errors?.['required']">
+                Tên sp bắt buộc nhập
+              </div>
+              <div *ngIf="desc.errors?.['minlength']">
+                Mô tả phải từ 6 ký tự trở lên
+              </div>
+              <div *ngIf="desc.errors?.['required']">
+                Mô tả bắt buộc phải nhập
+              </div>
+              <div *ngIf="price.errors?.['min']">
+                Giá phải lớn hơn 0
+              </div>
+              <div *ngIf="price.errors?.['required']">
+                Giá phải nhập
+              </div>
+        </div>
+
+        <div class="mb-3">
+            <button [disabled]="productForm.form.invalid" class="btn btn-success" type="submit">Submit</button>
+        </div>
+        
+    </form>
+</div>
