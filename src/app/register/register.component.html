@@ -1,1 +1,45 @@
-<p>register works!</p>
+<p>{{ registerForm.value | json }}</p>
+<form [formGroup]="registerForm" >
+
+    <div class="mb-3">
+        <label for="">Username</label>
+        <input type="text" class="form-control" placeholder="Enter your username" formControlName="username">
+        <app-show-validate
+        [formField]="registerForm.get('username')"
+        key="Username"
+        ></app-show-validate>
+    </div>
+
+    <div class="mb-3">
+        <label for="">Password</label>
+        <input type="password" class="form-control" placeholder="Enter your password" formControlName="password">
+        <app-show-validate
+        [formField]="registerForm.get('password')"
+        key="Password"
+        ></app-show-validate>
+    </div>
+
+    <div class="mb-3">
+        <label for="">Name</label>
+        <input type="text" class="form-control" placeholder="Enter your name" formControlName="name">
+        <app-show-validate
+        [formField]="registerForm.get('name')"
+        key="Name"
+        ></app-show-validate>
+    </div>
+
+    <div class="mb-3">
+        <label for="">Email</label>
+        <input type="email" class="form-control" placeholder="Enter your email" formControlName="email">
+        <div *ngIf="registerForm.get('email')?.dirty" class="text-danger">
+            <app-show-validate
+            [formField]="registerForm.get('email')"
+            key="Email"
+            ></app-show-validate>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <button [disabled]="!registerForm.valid" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>

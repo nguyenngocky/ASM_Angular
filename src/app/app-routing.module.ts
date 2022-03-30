@@ -6,6 +6,7 @@ import { StudentComponent } from './student/student.component'
 import { ProductDetailComponent } from './product-detail/product-detail.component'
 import { ProductFormComponent } from './product-form/product-form.component';
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
 
@@ -40,6 +41,10 @@ const routes: Routes = [
       {
         path: 'student',
         component: StudentComponent
+      },
+      {
+        path: 'register',
+        component: RegisterComponent
       }
     ]
   }
