@@ -1,0 +1,29 @@
+<div class="container animated animatedFadeInUp fadeInUp">
+    <div class="list-product">
+
+        <div class="product" *ngFor="let pro of products">
+            <div class="items">
+                <span class="box-sale"></span>
+                
+                <div class="image">
+                      <a [routerLink]="['/product-detail/', pro.id]">
+                        <img class="img-prd" src="{{pro.image_url}}" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="name-product ">
+                <a class="content-product-h3" [routerLink]="['/product-detail/', pro.id]">{{pro.name}} </a>
+            </div>
+            <div class="price"><app-product-price
+                [price]="pro.price"
+                [discount]="pro.discount"
+                ></app-product-price>
+            </div>
+            <div class="button">
+                <a [routerLink]="['/product-detail/', pro.id]" ><button class="btn-ellipse btn-cart" type="submit">Mua ngay</button></a>
+            </div>
+        </div>
+        
+
+    </div>
+</div>

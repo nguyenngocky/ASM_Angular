@@ -22,6 +22,7 @@ import { StatusComponent } from './components/status/status.component';
 import { AdminComponent } from './layouts/admin/admin.component';
 import { HomeComponent } from './home/home.component';
 import { ProductPriceComponent } from './components/product-price/product-price.component';
+import { ListProductComponent } from './client/list-product/list-product.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ProductPriceComponent } from './components/product-price/product-price.
     StatusComponent,
     AdminComponent,
     HomeComponent,
-    ProductPriceComponent
+    ProductPriceComponent,
+    ListProductComponent
   ],
   imports: [
     BrowserModule,

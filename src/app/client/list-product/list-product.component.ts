@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from '../services/product.service';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-list-product',
+  templateUrl: './list-product.component.html',
+  styleUrls: ['./list-product.component.css']
 })
-export class HomeComponent implements OnInit {
+export class ListProductComponent implements OnInit {
   products:any;
   constructor(
     private ps: ProductService

@@ -7,7 +7,7 @@
       "desc": "Sieu cap vippro",
       "id": 1,
       "status": 1,
-      "image_url": "/assets/images/sp.png",
+      "image_url": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/3/17/637831052118762354_oppo-reno7-z-dd-2.jpg",
       "id_category": 1
     },
     {
@@ -17,7 +17,7 @@
       "discount": 10,
       "desc": "Sieu cap vippro",
       "status": 0,
-      "image_url": "/assets/images/sp2.png",
+      "image_url": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/3/17/637831052118762354_oppo-reno7-z-dd-2.jpg",
       "id_category": 3
     },
     {
@@ -27,7 +27,47 @@
       "discount": 10,
       "desc": "Sieu cap vippro",
       "status": 0,
-      "image_url": "/assets/images/sp.png",
+      "image_url": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/3/17/637831052118762354_oppo-reno7-z-dd-2.jpg",
+      "id_category": 2
+    },
+    {
+      "id": 4,
+      "name": "Iphone 16",
+      "price": 12000000,
+      "discount": 10,
+      "desc": "Sieu cap vippro",
+      "status": 0,
+      "image_url": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/3/17/637831052118762354_oppo-reno7-z-dd-2.jpg",
+      "id_category": 2
+    },
+    {
+      "id": 5,
+      "name": "Iphone 17",
+      "price": 12000000,
+      "discount": 10,
+      "desc": "Sieu cap vippro",
+      "status": 0,
+      "image_url": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/3/17/637831052118762354_oppo-reno7-z-dd-2.jpg",
+      "id_category": 2
+    },
+    {
+      "id": 6,
+      "name": "Iphone 18",
+      "price": 12000000,
+      "discount": 10,
+      "desc": "Sieu cap vippro",
+      "status": 0,
+      "image_url": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/3/17/637831052118762354_oppo-reno7-z-dd-2.jpg",
+      "id_category": 2
+    },
+    {
+      "id": 7,
+      "name": "Iphone 19",
+      "price": 12000000,
+      "discount": 10,
+      "desc": "Sieu cap vippro",
+      "status": 0,
+      "image_url": "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/3/17/637831052118762354_oppo-reno7-z-dd-2.jpg",
       "id_category": 2
     }
   ],

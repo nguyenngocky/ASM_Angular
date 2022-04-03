@@ -8,8 +8,37 @@
 </head>
 <body>
     <div class="container-fluid">
-        <header style="background-color: rgb(26, 148, 255)" class="d-flex justify-content-around align-items-center p-2">
-            <div class="logo">
+        <header>
+            <div class="container-top">
+                <div class="contact d-flex align-items-center">
+                    <div class="form-sign">
+                        <a href="/">đăng nhập</a>
+                        <span>/</span>
+                        <a href="/">đăng ký</a>
+                    </div>
+                    <div class="logo">
+                        <a href=""><img src="/assets/images/2228f38cf84d1b8451bb49e2c4537081.png" alt=""></a>
+                    </div>
+                    <div class="search">
+                        <input type="search" placeholder="Tìm kiếm ...">
+                        <button class="btn"> <img src="/assets/images/search-icon.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-bot">
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="/">trang chủ</a></li>
+                            <li><a href="/list-product">sản phẩm</a></li>
+                            <li><a href="/">phụ kiện khác</a></li>
+                            <li><a href="/">tin tức</a></li>
+                            <li><a href="/">đại lý</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- <div class="logo">
                 <img width="80px" src="/assets/images/2228f38cf84d1b8451bb49e2c4537081.png" alt="">
             </div>
             <div class="search">
@@ -21,18 +50,53 @@
             <nav class="navbar navbar-expand-lg navbar-light" >
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item"><a class="nav-link text-light" routerLink="/">Home</a></li>
+                  <li class="nav-item"><a class="nav-link text-light" routerLink="/listProduct">Product</a></li>
                   <li class="nav-item"><a class="nav-link text-light" routerLink="/admin">Admin</a></li>
                   <li class="nav-item"><a class="nav-link text-light" routerLink="/login">Login</a></li>
                   <li class="nav-item"><a class="nav-link text-light" routerLink="/register">Register</a></li>
                 </ul>
-              </nav>
+              </nav> -->
         </header>
+        <div class="category">
+
+        </div>
 
         <main>
             <router-outlet></router-outlet>
         </main>
 
-        <footer style="text-align:center;" class="bg-info">Nguyen Ngoc Ky</footer>
+        <footer class="animated animatedFadeInUp fadeInUp">
+            <div class="footer-bot">
+                <div class="top-bot">
+                    <div class="left">
+                        <h3>
+                            Giới thiệu
+                        </h3>
+                        <span>
+                            Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua <br>
+                            và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng <br>
+                            Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và <br>
+                            Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010
+                        </span>
+                    </div>
+                    <div class="left right">
+                        <h3>
+                            địa chỉ
+                        </h3>
+                        <span>
+                            Phố Kiều Mai, Phường Phúc Diễn, <br>
+                            Quận Nam Từ Liêm, Tp.Hà Nội <br>
+                            SĐT: 033 507 5778 <br>
+                            Email: nguyenngocky1995@gmail.com <br>
+                                         shopk@shopk.media
+                        </span>
+                    </div>
+                </div>
+                <div class="top-bottom">
+                    <h4>© Bản quyền thuộc về Nguyễn Ngọc Kỳ, MSSV: PH13930</h4>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

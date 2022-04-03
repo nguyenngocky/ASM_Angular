@@ -3,12 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductComponent } from './product/product.component'
 import { AppComponent } from './app.component'
 import { StudentComponent } from './student/student.component'
-import { ProductDetailComponent } from './product-detail/product-detail.component'
+import { ProductDetailComponent } from './client/product-detail/product-detail.component'
 import { ProductFormComponent } from './product-form/product-form.component';
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
 import { RegisterComponent } from './register/register.component';
 import { AdminComponent } from './layouts/admin/admin.component';
 import { HomeComponent } from './home/home.component';
+import { ListProductComponent } from './client/list-product/list-product.component';
 
 const routes: Routes = [
 
@@ -23,6 +24,14 @@ const routes: Routes = [
       {
         path: 'register',
         component: RegisterComponent
+      },
+      {
+        path: 'list-product',
+        component: ListProductComponent
+      },
+      {
+        path: 'product-detail/:id',
+        component: ProductDetailComponent
       }
     ]
   },
