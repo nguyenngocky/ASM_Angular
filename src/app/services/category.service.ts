@@ -1,32 +1,31 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-const apiUrl = 'http://localhost:3000/phones';
+const apiUrl = 'http://localhost:3000/Category';
 @Injectable({
   providedIn: 'root'
 })
-export class ProductService {
+export class CategoryService {
 
   constructor(private http: HttpClient) { }
-    getProducts(): Observable<any> {
+    getCategorys(): Observable<any> {
       return this.http.get(apiUrl);
     }
 
-    getProduct(id: number | string): Observable<any> {
+    getCategory(id: number | string): Observable<any> {
       return this.http.get(`${apiUrl}/${id}`);
     }
 
-    createProduct(data :any): Observable<any> {
+    createCategory(data :any): Observable<any> {
       return this.http.post(`${apiUrl}`, data);
     }
 
-    updateProduct(id :number | string, data :any): Observable<any> {
+    updateCategory(id :number | string, data :any): Observable<any> {
       return this.http.put(`${apiUrl}/${id}`, data);
     }
 
-    deleteProduct(id :number | string) {
+    deleteCategory(id :number | string) {
       return this.http.delete(`${apiUrl}/${id}`)
     }
-   
 }

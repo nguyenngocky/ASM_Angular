@@ -32,20 +32,34 @@
                             <th>Name</th>
                             <th>Price</th>
                             <th>Desc</th>
+                            <th>Status</th>
                             <th><a class="btn btn-primary" [routerLink]="['/products/create']">Tạo mới</a></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr *ngFor="let pro of products">
-                            <td>{{pro.name}}</td>
+                            <td>
+                                <app-product-name
+                                [name]= "pro.name"
+                                ></app-product-name>
+                            </td>
                             <td>{{pro.price}}</td>
-                            <td>{{pro.desc}}</td>
+                            <td>
+                                <app-product-name
+                                [name]= "pro.desc"
+                                ></app-product-name>
+                            </td>
+                            <td><app-status
+                                [status]="pro.status"
+                                (changeStatus)="parentChangeStatus($event, pro.id)"
+                            ></app-status>
+                            </td>
                             <td>
                                 <a class="btn btn-primary" [routerLink]="['/products/', pro.id]">Chi tiet</a>
-                                <button (click)="onDelete(pro.id)" class="btn btn-danger"> Xóa</button>
                                 <a [routerLink]="['/products/', pro.id, 'edit']">
                                     <button class="btn btn-success">Sửa</button>
                                 </a>
+                                <button (click)="onDelete(pro.id)" class="btn btn-danger"> Xóa</button>
                             </td>
                         </tr>
                     </tbody>

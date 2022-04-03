@@ -17,6 +17,11 @@ import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component
 import { ToastrModule } from 'ngx-toastr';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ShowValidateComponent } from './components/show-validate/show-validate.component';
+import { ProductNameComponent } from './components/product-name/product-name.component';
+import { StatusComponent } from './components/status/status.component';
+import { AdminComponent } from './layouts/admin/admin.component';
+import { HomeComponent } from './home/home.component';
+import { ProductPriceComponent } from './components/product-price/product-price.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { ShowValidateComponent } from './components/show-validate/show-validate.
     ProductDetailComponent,
     ProductFormComponent,
     HomeLayoutComponent,
-    ShowValidateComponent
+    ShowValidateComponent,
+    ProductNameComponent,
+    StatusComponent,
+    AdminComponent,
+    HomeComponent,
+    ProductPriceComponent
   ],
   imports: [
     BrowserModule,

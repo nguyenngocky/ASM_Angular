@@ -1,22 +1,60 @@
 {
-  "products": [
+  "phones": [
     {
       "name": "Iphone 13Aaa",
       "price": 120000001,
+      "discount": 0,
       "desc": "Sieu cap vippro",
-      "id": 1
+      "id": 1,
+      "status": 1,
+      "image_url": "/assets/images/sp.png",
+      "id_category": 1
     },
     {
       "id": 2,
       "name": "Iphone 14",
       "price": 12000000,
-      "desc": "Sieu cap vippro"
+      "discount": 10,
+      "desc": "Sieu cap vippro",
+      "status": 0,
+      "image_url": "/assets/images/sp2.png",
+      "id_category": 3
     },
     {
       "id": 3,
       "name": "Iphone 15",
       "price": 12000000,
-      "desc": "Sieu cap vippro"
+      "discount": 10,
+      "desc": "Sieu cap vippro",
+      "status": 0,
+      "image_url": "/assets/images/sp.png",
+      "id_category": 2
+    }
+  ],
+  "Category": [
+    {
+      "id": 1,
+      "name": "Apple (iPhone)"
+    },
+    {
+      "id": 2,
+      "name": "Samsung"
+    },
+    {
+      "id": 3,
+      "name": "OPPO"
+    },
+    {
+      "id": 4,
+      "name": "Tecno"
+    },
+    {
+      "id": 5,
+      "name": "Masstel"
+    },
+    {
+      "id": 6,
+      "name": "Nokia"
     }
   ]
 }

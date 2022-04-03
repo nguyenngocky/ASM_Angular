@@ -7,26 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-info" >
+    <div class="container-fluid">
+        <header style="background-color: rgb(26, 148, 255)" class="d-flex justify-content-around align-items-center p-2">
+            <div class="logo">
+                <img width="80px" src="/assets/images/2228f38cf84d1b8451bb49e2c4537081.png" alt="">
+            </div>
+            <div class="search">
+                <div style="width: 500px;" class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                    <button type="button" class="btn btn-outline-primary bg-primary text-light">search</button>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light" >
                 <ul class="navbar-nav mr-auto">
-                  <li class="nav-item"><a class="nav-link text-primary" routerLink="/products">Product</a></li>
-                  <li class="nav-item"><a class="nav-link text-primary" routerLink="/student">Student</a></li>
-                  <li class="nav-item"><a class="nav-link text-primary" routerLink="/register">Register</a></li>
+                  <li class="nav-item"><a class="nav-link text-light" routerLink="/">Home</a></li>
+                  <li class="nav-item"><a class="nav-link text-light" routerLink="/admin">Admin</a></li>
+                  <li class="nav-item"><a class="nav-link text-light" routerLink="/login">Login</a></li>
+                  <li class="nav-item"><a class="nav-link text-light" routerLink="/register">Register</a></li>
                 </ul>
               </nav>
         </header>
-        <div class="row">
-            <aside class="col-lg-3">
-                đây là aside
-            </aside>
-            <main class="col-lg-9">
-                <router-outlet></router-outlet>
-            </main>
-        </div>
+
+        <main>
+            <router-outlet></router-outlet>
+        </main>
+
         <footer style="text-align:center;" class="bg-info">Nguyen Ngoc Ky</footer>
     </div>
 </body>
 </html>
-

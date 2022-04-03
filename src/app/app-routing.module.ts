@@ -7,6 +7,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductFormComponent } from './product-form/product-form.component';
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
 import { RegisterComponent } from './register/register.component';
+import { AdminComponent } from './layouts/admin/admin.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
 
@@ -16,7 +18,22 @@ const routes: Routes = [
     children: [
       {
         path: "",
-        component: ProductComponent,
+        component: HomeComponent,
+      },
+      {
+        path: 'register',
+        component: RegisterComponent
+      }
+    ]
+  },
+  {
+    path: 'admin',
+    component: AdminComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'products',
+        pathMatch: 'full'
       },
       {
         path: 'products',
@@ -35,16 +52,8 @@ const routes: Routes = [
         component: ProductFormComponent
       },
       {
-        path: 'app',
-        component: AppComponent
-      },
-      {
         path: 'student',
         component: StudentComponent
-      },
-      {
-        path: 'register',
-        component: RegisterComponent
       }
     ]
   }
