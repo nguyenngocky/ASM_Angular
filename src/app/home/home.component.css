@@ -40,7 +40,7 @@
 .container .title-sp {
     width: 1200px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 20px;
     border-bottom: 2px solid red;
     display: flex;
     justify-content: center;
@@ -284,4 +284,7 @@ border-radius: 3px;
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+a {
+  text-decoration: none !important;
 }
