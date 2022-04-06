@@ -7,12 +7,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import {FormsModule} from '@angular/forms';
-import { ProductComponent } from './product/product.component';
-import { StudentComponent } from './student/student.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
 import {ProductService } from './services/product.service';
 import {HttpClientModule} from '@angular/common/http';
-import { ProductFormComponent } from './product-form/product-form.component';
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
 import { ToastrModule } from 'ngx-toastr';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -20,9 +16,13 @@ import { ShowValidateComponent } from './components/show-validate/show-validate.
 import { ProductNameComponent } from './components/product-name/product-name.component';
 import { StatusComponent } from './components/status/status.component';
 import { AdminComponent } from './layouts/admin/admin.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './client/home/home.component';
 import { ProductPriceComponent } from './components/product-price/product-price.component';
 import { ListProductComponent } from './client/list-product/list-product.component';
+import { ProductDetailComponent } from './client/product-detail/product-detail.component';
+import { ProductFormComponent } from './Admin/product-form/product-form.component';
+import { ProductComponent } from './Admin/product/product.component';
+import { HomeAdminComponent } from './Admin/home-admin/home-admin.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,6 @@ import { ListProductComponent } from './client/list-product/list-product.compone
     LoginComponent,
     RegisterComponent,
     ProductComponent,
-    StudentComponent,
     ProductDetailComponent,
     ProductFormComponent,
     HomeLayoutComponent,
@@ -40,7 +39,8 @@ import { ListProductComponent } from './client/list-product/list-product.compone
     AdminComponent,
     HomeComponent,
     ProductPriceComponent,
-    ListProductComponent
+    ListProductComponent,
+    HomeAdminComponent
   ],
   imports: [
     BrowserModule,

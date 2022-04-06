@@ -7,19 +7,30 @@
     <title>Admin</title>
 </head>
 <body>
-    <div class="container">
-        <header class="navbar-light bg-info">
-            đây là header
+    <div class="container-fluid">
+        <header>
+            
+            <div class="container-bot">
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="/">Client</a></li>
+                            <li><a href="/admin/products">sản phẩm</a></li>
+                            <li><a href="/admin">Category</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
         <div class="d-flex">
-            <aside>
+            <aside class="">
                 đây là aside
             </aside>
-            <main>
+            <main class="">
                 <router-outlet></router-outlet>
             </main>
         </div>
-        <footer>
+        <footer class="bg-info">
             đây là footer
         </footer>
     </div>

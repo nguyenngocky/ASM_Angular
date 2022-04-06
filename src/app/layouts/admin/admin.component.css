@@ -1,0 +1,302 @@
+*,
+*::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+}
+.container-fluid{
+    width: 100%;
+    margin: 0 auto;
+}
+/* ////////////////// contact //////////////////// */
+.container-fluid .container-top {
+    width: 100%;
+    background-color: rgb(26, 148, 255);
+    max-height: 80px;
+}
+.container-fluid .container-top .contact {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container-fluid .container-top .contact .form-sign {
+    line-height: 5;
+}
+.container-fluid .container-top .contact .form-sign a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+.container-fluid .container-top .contact .form-sign a:hover {
+    color: antiquewhite;
+}
+.container-fluid .container-top .contact .form-sign span{
+    color: white;
+}
+.container-fluid .container-top .contact .logo img{
+    width: 80px;
+    cursor: pointer;
+}
+.container-fluid .container-top .contact .search {
+    line-height: 0;
+    position: relative;
+}
+.container-fluid .container-top .contact .search input{
+    padding: 10px 35px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+}
+.container-fluid .container-top .contact .search .btn {
+    width: 36px;
+    height: 35px;
+    position: absolute;
+    top: 3px;
+    border: none;
+    right: 4px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+.container-fluid .container-top .contact .search .btn:active{
+    background: #ffffff3b;
+}
+/* ////////////////// menu //////////////////// */
+.container-fluid .container-bot {
+    background-color: #dcdcdc;
+    max-height: 60px;
+}
+.container-fluid .container-bot .menu {
+    width: 1200px;
+    margin: 0 auto;
+}
+.container-fluid .container-bot .menu nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    list-style: none;
+}
+.container-fluid .container-bot .menu nav ul li{
+    list-style: none;
+    padding: 18px 24px;
+}
+.container-fluid .container-bot .menu nav ul li a{
+    color: rgb(66, 11, 108);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    padding: 18px 0;
+}
+.container-fluid .container-bot .menu nav ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+}
+.container-fluid .container-bot .menu nav ul li a:hover {
+    color: red;
+}
+.container-fluid .container-bot .menu nav ul li a:hover::after {
+    width: 100%;
+}
+.active{
+    padding-block-end: 18px;
+}
+.container-fluid .container-bot .menu nav ul li .active::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+}
+/* ////////////////// banner //////////////////// */
+.container-fluid .banner{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.container-fluid .banner iframe{
+    width: 1200px;
+    height: 500px;
+}
+/* ////////////////// items-top //////////////////// */
+.container-fluid .banner-item {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.container-fluid .banner-item .sp1:hover {
+    opacity: 0.7;
+    background-color: #2f4a79;
+}
+.container-fluid .banner-item .sp2:hover {
+    opacity: 0.7;
+    background-color: #a7a5b0;
+}
+.container-fluid .banner-item .sp3:hover {
+    opacity: 0.7;
+    background-color: #c50732;
+}
+.container-fluid .banner-item .item-top {
+    border: 1px solid red;
+    text-align: center;
+    overflow: hidden;
+}
+.container-fluid .banner-item .item-top h3 {
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 100;
+}
+.container-fluid .banner-item .item-top .lg img {
+    width: 104px;
+    height: 50px;
+}
+.container-fluid .banner-item .item-top .sp img {
+    width: 374px;
+    height: 272px;
+}
+/* ////////////////// title-sp //////////////////// */
+.container-fluid .title-sp {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+    border-bottom: 2px solid red;
+    display: flex;
+    justify-content: center;
+}
+.container-fluid .title-sp input {
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+/* ////////////////// list-items //////////////////// */
+.container-fluid .list-items {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.container-fluid .list-items .items {
+    display: flex;
+    justify-content: space-between;
+}
+.container-fluid .list-items .list {
+    margin-top: 10px;
+}
+.container-fluid .list-items .list .items .giay {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+}
+.container-fluid .list-items .list .items a {
+    text-decoration: none;
+}
+.container-fluid .list-items .list .items a:hover {
+    opacity: 0.8;
+    color: red;
+}
+.container-fluid .list-items .list .items .giay img {
+    width: 277px;
+    height: 177px;
+}
+.container-fluid .list-items .list .items .giay span {
+    color: #a66c6c;
+    padding-top: 15px;
+}
+.container-fluid .list-items .list .items .giay strong {
+    color: red;
+    padding-top: 10px;
+}
+/* ////////////////// footer //////////////////// */
+.container-fluid footer {
+    margin-top: 50px;
+    background-color: rgb(26, 148, 255);
+    max-height: 275px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.container-fluid footer .footer-bot {
+    width: 1200px;
+    margin: 0 auto;
+}
+.container-fluid footer .top-bot{
+    flex-grow: 2;
+    display: flex;
+    padding: 30px 0px;
+    border-bottom: 1px solid white;
+}
+.container-fluid footer .top-bot h3 {
+    text-transform: uppercase;
+    padding-bottom: 13px;
+}
+.container-fluid footer .top-bot .right {
+    padding-left: 150px;
+}
+.container-fluid footer .top-bottom {
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+/* //////////////////////////////////animation////////////////////////////////////// */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
