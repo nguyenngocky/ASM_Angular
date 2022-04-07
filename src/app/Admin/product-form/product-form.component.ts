@@ -28,7 +28,10 @@ export class ProductFormComponent implements OnInit {
       this.productDetail = {
         name: "",
         price: 0,
-        desc: ""
+        discount: 0,
+        image_url: "",
+        desc: "",
+        status: 0,
       };
       this.onGetList();
     }

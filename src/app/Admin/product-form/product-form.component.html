@@ -20,9 +20,25 @@
         </div>
 
         <div class="mb-3">
+          <label class="form-label" for="">Discount</label>
+          <input type="number" class="form-control" name="discount" placeholder="discount" [(ngModel)]="productDetail.discount" required min="1" #discount="ngModel">
+      </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="">Image</label>
+          <input type="text" class="form-control" name="image_url" placeholder="Nhập đường dẫn ảnh" [(ngModel)]="productDetail.image_url" required #image_url="ngModel">
+      </div>
+
+        <div class="mb-3">
             <label class="form-label" for="">Desc</label>
             <input type="text" class="form-control" name="desc" placeholder="desc" [(ngModel)]="productDetail.desc" required minlength="6" #desc="ngModel">
         </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="">Status</label>
+          <input type="radio" value="0" name="status" [(ngModel)]="productDetail.status" #status="ngModel"> Không kích hoạt
+          <input type="radio" value="1" name="status" [(ngModel)]="productDetail.status" #status="ngModel"> Kích hoạt
+      </div>
 
         <div *ngIf="productForm.form.dirty" style="color: red">
             <div *ngIf="name.errors?.['required']">
@@ -39,6 +55,15 @@
               </div>
               <div *ngIf="price.errors?.['required']">
                 Giá phải nhập
+              </div>
+              <div *ngIf="discount.errors?.['min']">
+                Giảm giá phải lớn hơn 0
+              </div>
+              <div *ngIf="discount.errors?.['required']">
+                Giảm giá phải nhập
+              </div>
+              <div *ngIf="image_url.errors?.['required']">
+                Phải nhập link ảnh
               </div>
         </div>
 
